@@ -7,3 +7,4 @@ coppy lai btvn
 up date
 <br>
 up date : clone techmaster.
+up date : photoshhop
