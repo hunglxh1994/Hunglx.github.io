@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+p {
+    margin-right: 360px;
+    margin-left: 220px;
+}
+
+/* img {
+    margin-right: 200px;
+    margin-left: 220px;
+} */
+
+h1 {
+    text-align: center;
+}
+h2
+{
+    text-align: center;
+}
+img.giay {
+    max-width: 300px;
+}
+
+img.giay2 {
+    max-width: 800px;
+}
+
+.back {
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    background: white;
+}
+
+.wrap {
+    max-width: 1500px;
+    margin: auto ;
+}
+
+.alignment{
+    margin-left: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    margin: auto;
+    width: 50%;
+}
