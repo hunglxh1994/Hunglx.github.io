@@ -29,14 +29,14 @@
 }
 
 .box4 {
-    padding : 15px;
+    /* padding : 15px; */
     float : left ;
     height:400px ;    
     width: 30%;
     border-top-width : 5px ;  
     text-align: center; 
     font-size: 50px;
-    margin: 15px;
+    margin: 7.5px;
     color: white;
 }
 
