@@ -68,3 +68,21 @@
   line-height: 40px;
   margin-left: -5px;
 }
+
+.font__decoration {
+  text-decoration: underline overline;
+  margin: auto;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between
+}
+.footer__email{
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+  max-width: 900px;
+  margin: auto;
+}
