@@ -11,14 +11,16 @@
 }
 .color1 {
     background-color: red;
-    width: 90%;
+    width: 60%;
     height: 400px;
 }
 .color2 {
     background-color: blue;
     height: 200px;
+   
 }
 .color3 {
     background-color: green;
     height: 200px;
+  
 }

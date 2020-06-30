@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border : 0 ; 
+}
+.warpper {
+  margin: auto;
+  max-width: 1200px;
+}
+.font__home-page {
+  margin-top: 100px;
+  text-align: center;
+  font-family: "Alex Brush";
+  font-size: 77px;
+}
+.font__home-page1 {
+  text-align: center;
+  font-family: "Advent Pro";
+  font-size: 55px;
+}
+.font__home-page2 {
+  text-align: center;
+  font-family: "Advent Pro";
+  font-size: 33px;
+}
+.font__text {
+  text-align: center;
+}
+.image__cover {
+  display: flex;
+  max-height: 600px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+.image__content {
+    max-height: 300px;
+    text-align: center;
+}
+.image__fix {
+  display: flex;
+  justify-content: center;
+
+}
+.menu__list {
+  font-family: sans-serif;
+  color: #333;
+  list-style-type: none;
+  text-align: center;
+}
+.menu__item {
+  display: inline-block;
+  margin-top: 100px;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: -5px;
+}
