@@ -6,7 +6,7 @@
 }
 .warpper {
   margin: auto;
-  max-width: 1200px;
+  /* max-width: 1200px; */
 }
 .font__home-page {
   margin-top: 100px;
@@ -37,6 +37,17 @@
 .image__content {
     max-height: 300px;
     text-align: center;
+    padding: 10px;
+}
+.image__content2 {
+  max-height: 110px;
+  text-align: center;
+  padding: 10px;
+}
+.image__content3 {
+  max-height: 110px;
+  text-align: center;
+  padding: 16px;
 }
 .image__fix {
   display: flex;
