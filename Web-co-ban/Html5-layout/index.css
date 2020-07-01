@@ -5,27 +5,36 @@
   border : 0 ; 
 }
 .warpper {
-  margin: auto;
-  /* max-width: 1200px; */
+  margin: 0 auto;
+  width: 1400px;
 }
 .font__home-page {
+  display: flex;
+  justify-content: center;
   margin-top: 100px;
   text-align: center;
   font-family: "Alex Brush";
   font-size: 77px;
-  
+  text-decoration: none;
+  color: black;
 }
 .font__home-page1 {
+  display: flex;
+  justify-content: center;
   text-align: center;
   font-family: "Advent Pro";
   font-size: 55px;
   text-decoration: none;
+  color: black;
 }
 .font__home-page2 {
+  display: flex;
+  justify-content: center;
   text-align: center;
   font-family: "Advent Pro";
   font-size: 33px;
   text-decoration: none;
+  color: black;
 }
 .font__text {
   text-align: center;
