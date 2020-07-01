@@ -8,6 +8,19 @@
   margin: 0 auto;
   max-width: 1200px;
 }
+.header {
+  margin: auto;
+}
+
+.content__web {
+  margin: auto;
+}
+.content__web2 {
+  margin: auto;
+}
+.content__web3 {
+  margin: auto;
+}
 .font__home-page {
   display: flex;
   justify-content: center;
