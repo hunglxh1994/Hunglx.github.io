@@ -4,9 +4,9 @@
   padding: 0;
   border : 0 ; 
 }
-.warpper {
+.wrapper  {
   margin: 0 auto;
-  width: 1400px;
+  max-width: 1200px;
 }
 .font__home-page {
   display: flex;
