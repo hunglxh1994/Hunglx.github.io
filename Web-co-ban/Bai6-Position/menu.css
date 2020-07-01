@@ -1,0 +1,38 @@
+.menu__link1{
+    text-decoration: none;
+    color:black;
+    display: block;
+    font-family: "Advent Pro";
+    border: black;
+  }
+  
+  .menu__link1:hover {
+    color: DarkSalmon;
+  }
+.menu__list1 {
+    display: flex;
+    flex-direction : column ;
+/* 
+    align-items  : flex-start ; */
+    font-family: sans-serif;
+    background-color: antiquewhite;
+    margin-top: 19px;
+    width: 180px;
+    height: 1180px;
+    list-style-type: none;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    text-transform: uppercase;
+
+  }
+
+  .menu__link1{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .menu__item1 {
+    border-bottom: 2px solid white;
+    padding: 15px;
+    position: relative;
+  }

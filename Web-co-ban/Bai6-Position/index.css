@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border : 0 ; 
+}
+.wrapper  {
+  margin: 0 auto;
+  max-width: 1300px;
+}
+.header {
+  margin: auto;
+}
+
+.content__web {
+  margin: auto;
+}
+.content__web2 {
+  margin: auto;
+}
+.content__web3 {
+  margin: auto;
+}
+.font__home-page {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  text-align: center;
+  font-family: "Alex Brush";
+  font-size: 77px;
+  text-decoration: none;
+  color: black;
+}
+.font__home-page1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Advent Pro";
+  font-size: 55px;
+  text-decoration: none;
+  color: black;
+}
+.font__home-page2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Advent Pro";
+  font-size: 33px;
+  text-decoration: none;
+  color: black;
+}
+.font__text {
+  text-align: center;
+  font-size: 20px;
+}
+.image__cover {
+  display: flex;
+  max-height: 600px;
+  margin: auto;
+  padding: 20px;
+}
+.image__content {
+    max-height: 300px;
+    padding: 10px;
+}
+.image__content2 {
+  max-height: 110px;
+  padding: 10px;
+}
+.image__content3 {
+  max-height: 110px;
+  padding: 16px;
+}
+.image__fix {
+  display: flex;
+  justify-content: center;
+
+}
+.menu__list {
+  font-family: sans-serif;
+  color: #333;
+  list-style-type: none;
+  text-align: center;
+}
+.menu__item {
+  display: inline-block;
+  margin-top: 100px;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: -5px;
+}
+
+.font__decoration {
+  text-decoration: underline overline;
+  margin: auto;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between ;
+  font-family: "Advent Pro";
+}
+.footer__email{
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+  max-width: 900px;
+  margin: auto;
+}
+
+.menu__link{
+  text-decoration: none;
+  color:black;
+  display: block;
+  font-family: "Advent Pro";
+}
+
+.menu__link:hover {
+  color: DarkSalmon;
+}
