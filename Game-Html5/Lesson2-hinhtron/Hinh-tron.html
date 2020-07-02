@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           text-align: center ;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mô hình hóa hình tròn</h1>
+    <canvas id="canvas"></canvas>
+    <script>
+        var canvas = document.querySelector('#canvas');
+
+
+        canvas.width = '600'
+        canvas.height = '600'
+        canvas.style.border = '1px solid black'
+
+        var ctx = canvas.getContext('2d')
+
+
+        class Arc {
+            constructor(dx, dy, radius,startAngle,endAngle,clockwise, color) {
+                
+                this.dx = dx
+                this.dy = dy
+                this.radius = radius
+                this.startAngle = startAngle * Math.PI
+                this.endAngle = endAngle * Math.PI
+                this.clockwise = clockwise
+                this.color = color
+            }
+
+                draw() {
+                    ctx.beginPath()
+                    ctx.fillStyle = this.color
+                    ctx.strokeStyle = "black "
+                    ctx.arc(this.dx, this.dy, this.radius, this.startAngle, this.endAngle ,this.clockwise)
+                    ctx.fill()
+                    ctx.stroke()
+            }
+
+        }
+
+        var face = new Arc ( 300,300,200,0,2 ,true, 'white')
+        face.draw()
+
+        var mouth = new Arc ( 300,300,150,0,1 ,false, 'white')
+        mouth.draw()
+
+        var eye = new Arc ( 200,200,20,0,2 ,false, 'white')
+        eye.draw()
+
+        var eye1 = new Arc ( 400,200,20,0,2 ,false, 'white')
+        eye1.draw()
+
+
+
+    </script>
+</body>
+
+</html>
