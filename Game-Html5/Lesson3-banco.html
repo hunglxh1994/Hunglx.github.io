@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <style>
+        * {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bàn cờ</h1>
+    <canvas id="canvas"></canvas>
+    <script>
+        var canvas = document.querySelector('#canvas');
+        canvas.width = '800'
+        canvas.height = '800'
+        canvas.style.border = '2px solid black'
+        var ctx = canvas.getContext('2d')
+
+        for (x = 0; x < 8; x++) {                                 
+            for (y = 0; y < 8; y++) {                              
+                if (x % 2 == y % 2) {                                
+                    ctx.fillStyle = 'black'                          
+                    ctx.fillRect(x * 100, y * 100, 100, 100)
+                } else {
+                    ctx.fillStyle = '#e17055'
+                    ctx.fillRect(x * 100, y * 100, 100, 100)
+                }
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>
