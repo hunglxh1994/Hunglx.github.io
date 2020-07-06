@@ -1,80 +1,86 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 
 }
-body{
-    background-color:#74b9ff;
+body {
+  background-color: #74b9ff;
 }
 .wrap {
-    margin: auto;
-    max-width: 1000px;
+  margin: auto;
+  max-width: 1000px;
+
 }
 
 .text {
-    text-align: center;
-    font-size: 50px;
-
+  text-align: center;
+  font-size: 50px;
 }
 img {
-    max-width: 250px;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 5px;
-
+  max-width: 250px;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
 }
 .img_dog {
-    border-radius: 5px;
-    background-color: white;
-    border: 5px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  border: 5px solid #ddd;
 }
-.col{
-    display: flex;
-    justify-content: center;
-    flex-wrap : wrap ;
-    padding: 5px;
-    position: relative;
-    align-items: center;
+.col {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5px;
+  position: relative;
+  align-items: center;
 
-    border-radius: 5px;
-    background-color: white;
-    border: 5px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  border: 5px solid #ddd;
 
-    transition: all 1s;
-
+  transition: all 2s;
 }
 .thumb {
-    padding: 5px;
-    border-radius: 5px;
-    background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
 
-    margin: 5px;
-    cursor: pointer;
-    transition: all 1s; 
- 
+  margin: 5px;
+  cursor: pointer;
+
 }
-                                                        
+
 .thumb img {
-   vertical-align: middle;
+  vertical-align: middle;
 }
 .thumb:hover img {
-    transform: scale(1.2);
+  transform: scale(1.2);
+  transition: all 2s;
 }
-
 
 @keyframes example {
-    0% {transform: scale(1)}   
-  25%  {transform: scale(1)} 
-  50%  {transform: scale(0.8)} 
-  75%  {transform: scale(0.6)}
-  100% {transform: scale(1)}
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  75% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .heart {
-    position: absolute;
-    left: 40%;
-    animation: example 5s ease infinite;
-    padding-bottom: 20px;
-
+  position: absolute;
+  left: 40%;
+  animation: example 5s ease infinite;
+  padding-bottom: 20px;
+  height: 500px;
 }
-
