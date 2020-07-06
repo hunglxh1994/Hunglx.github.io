@@ -79,7 +79,7 @@ img {
 }
 .heart {
   position: absolute;
-  left: 40%;
+  left: 50%;
   animation: example 5s ease infinite;
   padding-bottom: 20px;
   height: 500px;
