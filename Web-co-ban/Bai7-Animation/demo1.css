@@ -80,7 +80,8 @@ img {
 .heart {
   position: absolute;
   left: 40%;
-  animation: example 5s ease infinite;
+  transform: translate(-50%,-50%);
+  animation: example 3s ease infinite;
   padding-bottom: 20px;
   height: 500px;
 }
