@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+  li {
+      list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  nav.main-menu > ul > li {
+    position: relative;
+    display: inline-block;
+    padding-right: 25px;
+  }
+
+  nav.main-menu ul li a {
+    color: #32323d;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+/* (text-transform: uppercase; đổi chữ thường thành chữ hoa) */
+  nav.main-menu ul li:hover > a {
+    color: #9877ff;
+  }
+  /* (li a ---> chọn tất cả thẻ a đằng sau li)
+(li > a) -----> chỉ chọn thẻ a đăng sau của li ) */
+
+
+  nav.main-menu .level2 {
+    width: 500px;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    /* display: none; */
+  }
+  /* display : none ---> ẩn khối */
+
+  nav.main-menu ul li:hover .level2 {
+    display: block;
+  }
+
+  nav.main-menu .level2 .column {
+    display: inline-block;
+  }
+.level2 {
+    border-radius: 10px;
+    border : 1px solid #636e72 ;
+}
+
+nav.main-menu  .heading  {
+    padding: 0;
+}
