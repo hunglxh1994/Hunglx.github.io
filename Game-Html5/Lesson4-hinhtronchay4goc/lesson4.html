@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <canvas id="canvas"></canvas>
+</body>
+
+</html>
+<!---
+  Tạo hiệu ứng hoạt hình bóng tự động di chuyển theo phương ngang
+  Bổ xung thêm đoạn này
+  function animate() {
+    requestAnimationFrame(animate);
+    c.clearRect(0, 0, canvas.width, canvas.height);
+    ball.move();
+  }
+
+  animate();
+-->
+<script>
+  var canvas = document.getElementById("canvas");
+  var c = canvas.getContext('2d');
+
+  canvas.width = innerWidth;
+  canvas.height = innerHeight;
+
+  addEventListener("resize", function () {
+    canvas.width = innerWidth;
+    canvas.height = innerHeight;
+  });
+
+
+  class Ball {
+    constructor(x, y, dx, radius, color) {
+      this.x = x;
+      this.y = y;
+      this.dx = 0;
+      this.dy = 0; //Thêm property dx
+      this.radius = radius;
+      this.color = color;
+    }
+
+    draw() {
+      c.beginPath();
+      c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+      c.fillStyle = this.color;
+      c.fill();
+      c.stroke();
+      c.closePath();
+    }
+
+    /* Bổ xung logic chặn bóng không đi quá tường trái và phải
+    */
+    move() {
+      // if (this.x > canvas.width - this.radius - 1 ) {
+      //   this.dx = 5;
+      //   this.dy = 0 ;
+      //   this.x = this.x + 10;
+      // }
+      if (this.x > canvas.width - this.radius - 1) {
+        this.dx = 0;
+        this.dy = 5;
+        this.y = this.y + 5;
+      }
+
+      if (this.y > canvas.height - this.radius - 1) {
+        this.dx = -5;
+        this.dy = 0;
+        this.x = this.x - 5;
+      }
+      if (this.x <= this.radius) {
+        this.dx = 0;
+        this.dy = -5;
+        this.y = this.y - 5;
+      }
+
+      if (this.y <= this.radius) {
+        this.dy = 0;
+        this.x = this.x  + 5;
+      }
+
+      this.x = this.x + this.dx;
+      this.y = this.y + this.dy;
+      this.draw();
+      console.log(this.x);
+      console.log(this.y);
+    }
+
+
+  }
+
+  //---------
+  var ball = new Ball(25, 25, 0, 20, 'red');
+  ball.draw();
+
+  //Di chuyển sang trái và phải 
+  var count = 0;
+
+ 
+  addEventListener("keydown", function (event) {
+    if (event.keyCode == 32) {
+    
+      count = count + 1
+      if (count % 2 == 0) {
+        console.log("Start ", count);
+        ball.dx = 5 ;
+      } else {
+        ball.dx = 0 ;
+        ball.dy = 0 ;
+        console.log("End ", count);
+        
+      }
+    }
+  });
+
+
+
+
+  function animate() {
+    requestAnimationFrame(animate);
+    c.clearRect(0, 0, canvas.width, canvas.height);
+    ball.move();
+  }
+
+  animate();
+</script>
